@@ -47,6 +47,27 @@ void KeyboardControl()
   {
 	std::cout<< "c variable"<< c <<std::endl;
 	/*Please input your codes here*/
+    switch(c){
+	  case(119):
+	    vel_msg.linear.x = 2;
+	    vel_msg.angular.x = 0;
+	    vel_msg.angular.y = 0;
+	    vel_msg.angular.z = 0;
+	    break;
+	  case(115):
+	    vel_msg.linear.x = -2;
+	    vel_msg.angular.x = 0;
+	    vel_msg.angular.y = 0;
+	    vel_msg.angular.z = 0;
+	    break;
+	  case(97):
+	    vel_msg.angular.z = 3;
+	    break;
+	  case(100):
+	    vel_msg.angular.z = -3;
+	    break;
+
+    }
   }
 }
 
